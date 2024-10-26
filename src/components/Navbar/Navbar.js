@@ -19,17 +19,17 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <ul>
-        <li>
-          <Link to="/main-menu">Home</Link>
-        </li>
-        <li>
-          <Link to="/chatbot">ChatBot</Link>
-        </li>
-        <li>
-          <button onClick={handleLogout}>Logout</button>
-        </li>
-      </ul>
+      <div className="navbar-links">
+        <ul>
+          <li>
+            <Link to="/main-menu">Home</Link>
+          </li>
+          <li>
+            <Link to="/chatbot">ChatBot</Link>
+          </li>
+        </ul>
+        <button onClick={handleLogout}>Logout</button>
+      </div>
     </nav>
   );
 };
