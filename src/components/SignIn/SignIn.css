@@ -1,0 +1,33 @@
+/* src/components/SignIn/SignIn.css */
+
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121212;
+  }
+  
+  .signin-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .signin-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  h1 {
+    color: #000;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+  }
