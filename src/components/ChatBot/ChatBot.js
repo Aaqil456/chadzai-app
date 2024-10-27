@@ -68,8 +68,7 @@ function ChatBot() {
           if (matchedMachine) {
             setResponse(`Machine: ${machineInfo[matchedMachine].name}. Usage: ${machineInfo[matchedMachine].usage}`);
           } else {
-            setResponse("Machine recognized, but no details are available.");
-          }
+            setResponse(`Machine recognized, but no details are available. This is the : "${prediction}"`);          }
         } else {
           setResponse("Machine not recognized.");
         }
