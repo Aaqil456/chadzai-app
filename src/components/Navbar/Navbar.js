@@ -5,6 +5,7 @@ import { signOut } from 'firebase/auth'; // Import signOut
 import { auth } from '../../services/firebase'; // Import auth
 import './Navbar.css';
 
+
 const Navbar = () => {
   const navigate = useNavigate();
 

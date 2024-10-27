@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import * as mobilenet from '@tensorflow-models/mobilenet';
 import '@tensorflow/tfjs';
 import './ChatBot.css';
 
 function ChatBot() {
+  const navigate = useNavigate();
   const [image, setImage] = useState(null); // For storing the uploaded image
   const [response, setResponse] = useState('');
 
@@ -83,32 +85,37 @@ function ChatBot() {
 
   return (
     <div className="chatbot-container">
-      <h2>AI Assistant</h2>
-      <form onSubmit={handleImageScan} className="chatbot-form">
-        <input
-          type="file"
-          accept="image/*"
-          onChange={handleImageUpload}
-          className="chatbot-file-input"
-        />
-        <button type="submit" className="chatbot-submit">Scan Machine</button>
-      </form>
+      <div className="chatbot-content">
+        <h2>AI Assistant</h2>
+        <button onClick={() => navigate('/main-menu')} className="back-button">
+          Back to Main Menu
+        </button>
+        <form onSubmit={handleImageScan} className="chatbot-form">
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handleImageUpload}
+            className="chatbot-file-input"
+          />
+          <button type="submit" className="chatbot-submit">Scan Machine</button>
+        </form>
 
-      {/* Show the uploaded image as a preview */}
-      {image && (
-        <div>
-          <h3>Uploaded Image:</h3>
-          <img id="uploadedImage" src={image} alt="Uploaded" style={{ maxWidth: '100%', marginTop: '10px' }} />
-        </div>
-      )}
+        {/* Show the uploaded image as a preview */}
+        {image && (
+          <div className="image-preview">
+            <h3>Uploaded Image:</h3>
+            <img id="uploadedImage" src={image} alt="Uploaded" />
+          </div>
+        )}
 
-      {/* Display the response */}
-      {response && (
-        <div className="chatbot-response">
-          <h3>Response:</h3>
-          <p>{response}</p>
-        </div>
-      )}
+        {/* Display the response */}
+        {response && (
+          <div className="chatbot-response">
+            <h3>Response:</h3>
+            <p>{response}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

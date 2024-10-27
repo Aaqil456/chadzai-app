@@ -1,20 +1,25 @@
-import React, { useState } from 'react';
-import ChatBot from '../ChatBot/ChatBot';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './MainMenu.css';
 
 function MainMenu() {
-  const [showChatBot, setShowChatBot] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="main-menu-container">
       <h1>Welcome to Your Fitness Dashboard</h1>
       <button 
         className="chatbot-button"
-        onClick={() => setShowChatBot(!showChatBot)}
+        onClick={() => navigate('/chatbot')}
       >
-        {showChatBot ? 'Close ChatBot' : 'Open ChatBot'}
+        Open ChatBot
       </button>
-      {showChatBot && <ChatBot />}
+      <button 
+        className="find-workouts-button"
+        onClick={() => navigate('/workout-chat')}
+      >
+        Find My Workouts
+      </button>
     </div>
   );
 }

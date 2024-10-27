@@ -7,7 +7,8 @@ import { auth } from './services/firebase';
 import SignIn from './components/SignIn/SignIn';
 import UserForm from './components/UserForm/UserForm';
 import MainMenu from './components/MainMenu/MainMenu';
-import Navbar from './components/Navbar/Navbar'; // Import Navbar
+import Navbar from './components/Navbar/Navbar';
+import ChatBot from './components/ChatBot/ChatBot';
 
 import './App.css';
 
@@ -31,11 +32,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {user && <Navbar />} {/* Render Navbar if user is logged in */}
+        {user && <Navbar />}
         <Routes>
           <Route path="/signin" element={!user ? <SignIn /> : <Navigate to="/main-menu" />} />
           <Route path="/user-form" element={user ? <UserForm /> : <Navigate to="/signin" />} />
           <Route path="/main-menu" element={user ? <MainMenu /> : <Navigate to="/signin" />} />
+          <Route path="/chatbot" element={user ? <ChatBot /> : <Navigate to="/signin" />} />
           <Route path="*" element={<Navigate to={user ? "/main-menu" : "/signin"} />} />
         </Routes>
       </div>

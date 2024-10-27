@@ -1,0 +1,73 @@
+.workout-chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 600px;
+  height: calc(100vh - 200px);
+  margin-top: 20px;
+  border: 2px solid #0ef4e4;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1c1c1e;
+}
+
+.back-button {
+  background: transparent;
+  color: #0ef4e4;
+  border: 2px solid #0ef4e4;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #0ef4e4;
+  color: #121212;
+  box-shadow: 0 0 10px #0ef4e4, 0 0 20px #0ef4e4;
+}
+
+h1 {
+  color: #0ef4e4;
+  margin-bottom: 20px;
+}
+
+/* Styles to customize Voiceflow chat appearance */
+.vfrc-chat {
+  --vfrc-chat-bg-color: #1c1c1e;
+  --vfrc-chat-bubble-bg-color: #2c2c2e;
+  --vfrc-chat-bubble-text-color: #e0e0e0;
+  --vfrc-chat-input-bg-color: #2c2c2e;
+  --vfrc-chat-input-text-color: #e0e0e0;
+  --vfrc-chat-send-button-color: #0ef4e4;
+}
+
+.vfrc-chat__messages {
+  padding: 20px;
+}
+
+.vfrc-chat__input {
+  padding: 10px;
+}
+
+.vfrc-chat__input-field {
+  border-radius: 5px;
+}
+
+.vfrc-chat__send-button {
+  background-color: #0ef4e4;
+  color: #121212;
+}
