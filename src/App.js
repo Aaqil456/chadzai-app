@@ -9,7 +9,7 @@ import UserForm from './components/UserForm/UserForm';
 import MainMenu from './components/MainMenu/MainMenu';
 import Navbar from './components/Navbar/Navbar';
 import ChatBot from './components/ChatBot/ChatBot';
-
+import WorkoutChat from './components/WorkoutChat/WorkoutChat'
 import './App.css';
 
 function App() {
@@ -38,6 +38,8 @@ function App() {
           <Route path="/user-form" element={user ? <UserForm /> : <Navigate to="/signin" />} />
           <Route path="/main-menu" element={user ? <MainMenu /> : <Navigate to="/signin" />} />
           <Route path="/chatbot" element={user ? <ChatBot /> : <Navigate to="/signin" />} />
+          <Route path="/workoutplan" element={user ? <WorkoutChat /> : <Navigate to="/signin" />} />
+
           <Route path="*" element={<Navigate to={user ? "/main-menu" : "/signin"} />} />
         </Routes>
       </div>

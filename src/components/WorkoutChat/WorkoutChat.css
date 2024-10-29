@@ -1,73 +1,117 @@
-.workout-chat-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
-  background-color: #121212;
-  color: #e0e0e0;
+.workout-chat {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  box-sizing: border-box;
 }
 
-.chat-container {
-  width: 100%;
-  max-width: 600px;
-  height: calc(100vh - 200px);
-  margin-top: 20px;
-  border: 2px solid #0ef4e4;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #1c1c1e;
-}
-
-.back-button {
-  background: transparent;
-  color: #0ef4e4;
-  border: 2px solid #0ef4e4;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.back-button:hover {
-  background: #0ef4e4;
-  color: #121212;
-  box-shadow: 0 0 10px #0ef4e4, 0 0 20px #0ef4e4;
-}
-
-h1 {
-  color: #0ef4e4;
+.question-container {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-/* Styles to customize Voiceflow chat appearance */
-.vfrc-chat {
-  --vfrc-chat-bg-color: #1c1c1e;
-  --vfrc-chat-bubble-bg-color: #2c2c2e;
-  --vfrc-chat-bubble-text-color: #e0e0e0;
-  --vfrc-chat-input-bg-color: #2c2c2e;
-  --vfrc-chat-input-text-color: #e0e0e0;
-  --vfrc-chat-send-button-color: #0ef4e4;
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
-.vfrc-chat__messages {
+.option-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option-button:hover {
+  background-color: #0056b3;
+}
+
+.workout-plan-container {
+  background-color: white;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.vfrc-chat__input {
+.workout-plan-container h2 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.workout-plan-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.workout-plan-container li {
+  margin-bottom: 10px;
   padding: 10px;
-}
-
-.vfrc-chat__input-field {
+  background-color: #f8f9fa;
   border-radius: 5px;
 }
 
-.vfrc-chat__send-button {
-  background-color: #0ef4e4;
-  color: #121212;
+.workout-program {
+  padding: 20px;
+}
+
+.workout-program h2 {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.workout-program h3 {
+  color: #000000;
+  margin: 25px 0 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000000;
+}
+
+.workout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.979);
+}
+
+.workout-table th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.workout-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.workout-table tr:hover {
+  background-color: #dddddda1;
+}
+
+.section-header {
+  background-color: #f8f9fa;
+}
+
+.section-header td {
+  font-weight: bold;
+  color: #555;
+}
+
+.workout-table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .workout-table {
+    display: block;
+    overflow-x: auto;
+  }
 }

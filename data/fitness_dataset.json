@@ -1,0 +1,39 @@
+{
+  "conversations": [
+    {
+      "questions": [
+        {
+          "text": "What is your fitness goal?",
+          "options": ["Weight Loss", "Muscle Gain", "General Fitness", "Athletic Performance"]
+        },
+        {
+          "text": "How many days per week can you workout?",
+          "options": ["2-3 days", "3-4 days", "4-5 days", "6+ days"]
+        },
+        {
+          "text": "What's your current fitness level?",
+          "options": ["Beginner", "Intermediate", "Advanced"]
+        },
+        {
+          "text": "Do you have any injuries or limitations?",
+          "options": ["None", "Back Pain", "Knee Issues", "Shoulder Pain"]
+        }
+      ],
+      "workout_plans": {
+        "Weight Loss_3-4 days_Beginner_None": {
+          "plan": "Here's your customized weight loss plan:\n\nDay 1 - Full Body:\n- Bodyweight squats 3x12\n- Push-ups 3x10\n- Walking lunges 3x10/leg\n...",
+          "alternatives": [
+            "Alternative plan 1...",
+            "Alternative plan 2..."
+          ]
+        }
+        // Add more combinations
+      },
+      "modifications": {
+        "too_difficult": "Here's an easier variation...",
+        "too_easy": "Let's increase the intensity...",
+        "time_constraint": "Here's a shorter version..."
+      }
+    }
+  ]
+} 

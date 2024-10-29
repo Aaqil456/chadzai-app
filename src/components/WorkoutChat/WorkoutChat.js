@@ -1,46 +1,109 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { questions } from '../../data/questions';
+import { workoutPlans } from '../../data/workoutPlans';
+import { determineWorkoutPlan } from '../../utils/workoutUtils';
 import './WorkoutChat.css';
 
 function WorkoutChat() {
   const navigate = useNavigate();
-  const chatContainerRef = useRef(null);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [answers, setAnswers] = useState({});
+  const [showWorkoutPlan, setShowWorkoutPlan] = useState(false);
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-    script.async = true;
-    script.onload = function() {
-      window.voiceflow.chat.load({
-        verify: { projectID: '66f42770011c56b5632835b6' },
-        url: 'https://general-runtime.voiceflow.com',
-        versionID: 'production',
-        container: chatContainerRef.current,
-        launcher: { open: true },
-        styles: {
-          width: '100%',
-          height: '100%',
-          border: 'none',
-          borderRadius: '10px',
-        }
-      });
-    };
-    document.body.appendChild(script);
+  const handleAnswer = (answer) => {
+    const newAnswers = { ...answers };
+    
+    switch(currentQuestion) {
+      case 0:
+        newAnswers.goal = answer;
+        break;
+      case 1:
+        newAnswers.skill = answer;
+        break;
+      case 2:
+        newAnswers.style = answer;
+        break;
+      default:
+        break;
+    }
+    
+    setAnswers(newAnswers);
 
-    return () => {
-      document.body.removeChild(script);
+    if (currentQuestion === questions.length - 1 || 
+        (newAnswers.goal === "Build Muscle" && currentQuestion === 2) ||
+        (newAnswers.goal === "Calisthenics Skills" && currentQuestion === 1)) {
+      setShowWorkoutPlan(true);
+    } else {
+      setCurrentQuestion(currentQuestion + 1);
+    }
+  };
+
+  const getCurrentQuestion = () => {
+    const question = questions[currentQuestion];
+    if (question.conditional && !question.conditional(answers)) {
+      handleAnswer(null);
+      return null;
+    }
+    return question;
+  };
+
+  const question = getCurrentQuestion();
+
+  const handleSaveWorkout = () => {
+    const workoutPlan = determineWorkoutPlan(answers, workoutPlans);
+    const savedWorkouts = JSON.parse(localStorage.getItem('savedWorkouts') || '[]');
+    
+    const newWorkout = {
+      id: Date.now(),
+      type: answers.goal === "Build Muscle" ? answers.style : answers.skill,
+      plan: workoutPlan,
+      date: new Date().toLocaleDateString()
     };
-  }, []);
+    
+    savedWorkouts.push(newWorkout);
+    localStorage.setItem('savedWorkouts', JSON.stringify(savedWorkouts));
+    
+    navigate('/'); // Return to main menu
+  };
 
   return (
-    <div className="workout-chat-container">
-      <h1>Find My Workouts</h1>
-      <button onClick={() => navigate('/main-menu')} className="back-button">
-        Back to Main Menu
-      </button>
-      <div ref={chatContainerRef} className="chat-container"></div>
+    <div className="workout-chat">
+      {!showWorkoutPlan ? (
+        question && (
+          <div className="question-container">
+            <h2>{question.text}</h2>
+            <div className="options-container">
+              {question.options.map((option, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleAnswer(option)}
+                  className="option-button"
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+          </div>
+        )
+      ) : (
+        <div className="workout-plan-container">
+          <div dangerouslySetInnerHTML={{ 
+            __html: determineWorkoutPlan(answers, workoutPlans) 
+          }} />
+          <button 
+            className="save-workout-button"
+            onClick={handleSaveWorkout}
+          >
+            Save Workout Plan
+          </button>
+        </div>
+      )}
     </div>
   );
 }
 
 export default WorkoutChat;
+
+
+

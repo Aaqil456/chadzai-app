@@ -136,3 +136,184 @@ h1 {
   background-color: #0ef4e4 !important;
   color: #121212 !important;
 }
+
+/* Add these styles to your existing CSS */
+
+.saved-workouts-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.saved-workouts-container h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.workout-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.workout-card {
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+.workout-card:hover {
+  transform: translateY(-5px);
+}
+
+.workout-card h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.workout-card p {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.workout-card-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.view-button, .delete-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-button {
+  background-color: #0ef4e4;
+  color: #121212;
+}
+
+.delete-button {
+  background-color: #ff4444;
+  color: #ffffff;
+}
+
+.view-button:hover, .delete-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(14, 244, 228, 0.3);
+}
+
+.save-workout-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #0ef4e4;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.save-workout-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(14, 244, 228, 0.3);
+}
+
+/* Add these new styles to your existing CSS */
+
+.workout-plan-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.workout-plan-display {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  overflow-x: auto;
+  color: #333;
+}
+
+.workout-plan-display h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.workout-plan-display table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.workout-plan-display th,
+.workout-plan-display td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.workout-plan-display th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.workout-plan-display tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.workout-plan-display .section-header {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Ensure the table is responsive */
+@media (max-width: 768px) {
+  .workout-plan-display {
+    overflow-x: auto;
+  }
+  
+  .workout-plan-display table {
+    min-width: 600px;
+  }
+}
+
+/* Style any lists within the workout plan */
+.workout-plan-display ul,
+.workout-plan-display ol {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.workout-plan-display li {
+  margin-bottom: 5px;
+}
+
+/* Style any embedded iframes */
+.workout-plan-display iframe {
+  max-width: 100%;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+/* Adjust spacing for better layout */
+.saved-workouts-container {
+  margin-bottom: 20px;
+}
+
+.workout-cards {
+  margin-bottom: 0;
+}
