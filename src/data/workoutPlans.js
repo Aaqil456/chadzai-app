@@ -530,12 +530,846 @@ export const workoutPlans = {
         </tbody>
     </table>
 </div>
+`,
+
+    planche: `
+    
+    <div class="workout-program">
+    <h2>Beginner-Friendly Planche Workout Plan (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Foundation Building & Planche Basics</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Wrist stretches, Shoulder dislocates, Arm circles, Cat-cow stretches</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Plank Hold</td>
+                <td>4</td>
+                <td>20-30 secs</td>
+                <td>1 min</td>
+            </tr>
+            <tr>
+                <td>Planche Lean (Beginner)</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Knee Tuck Planche (On Knees)</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Incline Push-Ups</td>
+                <td>3</td>
+                <td>8-10 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Scapular Push-Ups</td>
+                <td>3</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Hollow Body Hold (Beginner)</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Planche Progression & Core Strength</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Wrist stretches, Shoulder dislocates, Arm rotations</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Plank to Planche Lean (Beginner)</td>
+                <td>3</td>
+                <td>8-10 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Tuck Planche on Knees (Progression)</td>
+                <td>3</td>
+                <td>10-20 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Knee Push-Ups</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Dips (Use Chair or Bench)</td>
+                <td>3</td>
+                <td>6-8 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Lying Scapular Retractions</td>
+                <td>3</td>
+                <td>12 reps</td>
+                <td>1 min</td>
+            </tr>
+
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck-Up Hold</td>
+                <td>3</td>
+                <td>20 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Strength & Mobility Focus</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Wrist circles, Shoulder mobility drills, Dynamic arm stretches</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Elevated Plank Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Wall Planche Leans (Beginner)</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Negative Push-Ups</td>
+                <td>3</td>
+                <td>5-6 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Parallel Bar Support Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Pike Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+
+            <tr class="section-header">
+                <td colspan="4"><strong>Mobility Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Wrist Flexibility Drills</td>
+                <td>-</td>
+                <td>3 sets of 30 secs each</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Shoulder Flexion Stretches</td>
+                <td>-</td>
+                <td>3 sets of 20-30 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 
     `,
-    planche: `...your planche plan...`,
-    frontLever: `...your front lever plan...`,
-    backLever: `...your back lever plan...`,
-    humanFlag: `...your human flag plan...`
+
+    frontLever: `
+    
+    <div class="workout-program">
+    <h2>Beginner-Friendly Front Lever Workout Plan (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Core & Back Strength</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Wrist stretches, Shoulder dislocates, Scapular push-ups, Hollow body hold</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck Front Lever Hold (Beginner)</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Inverted Rows</td>
+                <td>4</td>
+                <td>8-10 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Hollow Body Rocks</td>
+                <td>3</td>
+                <td>20-30 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Negative Pull-Ups</td>
+                <td>3</td>
+                <td>3-5 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Scapular Pull-Ups</td>
+                <td>3</td>
+                <td>10 reps</td>
+                <td>1 min</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Plank Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Shoulder & Core Strength</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Shoulder & wrist mobility exercises, Arm circles, Dynamic stretches</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck Front Lever Rows</td>
+                <td>3</td>
+                <td>8-10 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Hanging Leg Raises (Knee Tucks)</td>
+                <td>3</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Band-Assisted Front Lever Holds</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Bodyweight Rows</td>
+                <td>4</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Pike Push-Ups</td>
+                <td>3</td>
+                <td>8-10 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck L-Sit Hold</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Full Body Strength & Front Lever Progressions</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Dynamic stretches, Hollow body holds, Shoulder dislocates</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck Front Lever (Advanced)</td>
+                <td>4</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Pull-Ups (Band-Assisted if Necessary)</td>
+                <td>3</td>
+                <td>6-8 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Tuck Front Lever to Negative Front Lever</td>
+                <td>3</td>
+                <td>3-5 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Back Extensions</td>
+                <td>3</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Isometric Ring Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Hollow Body Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    
+    `,
+
+
+    backLever: 
+    `
+    <div class="workout-program">
+    <h2>Beginner-Friendly Back Lever Workout Plan (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Core & Back Strength</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Wrist stretches, Shoulder dislocates, Dynamic back stretches, Hollow body hold</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck Back Lever Hold</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Inverted Rows (Under a Bar)</td>
+                <td>4</td>
+                <td>8-10 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Hollow Body Rocks</td>
+                <td>3</td>
+                <td>20-30 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Negative Pull-Ups</td>
+                <td>3</td>
+                <td>3-5 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Scapular Pull-Ups</td>
+                <td>3</td>
+                <td>10 reps</td>
+                <td>1 min</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Plank Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Shoulder & Core Stability</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Shoulder mobility drills, Arm circles, Dynamic shoulder stretches</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck Back Lever Rows</td>
+                <td>3</td>
+                <td>8-10 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Hanging Leg Raises (Knee Tucks)</td>
+                <td>3</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Band-Assisted Back Lever Holds</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Bodyweight Rows</td>
+                <td>4</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Pike Push-Ups</td>
+                <td>3</td>
+                <td>8-10 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck L-Sit Hold</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Full Body Strength & Back Lever Progressions</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Dynamic stretches for shoulders, back, core; Hollow body hold, Shoulder dislocates</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck Back Lever (Advanced)</td>
+                <td>4</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Pull-Ups (Band-Assisted if Necessary)</td>
+                <td>3</td>
+                <td>6-8 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Tuck Back Lever to Negative Back Lever</td>
+                <td>3</td>
+                <td>3-5 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Back Extensions</td>
+                <td>3</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Isometric Ring Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Hollow Body Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    
+    `,
+    humanFlag: 
+    `
+    <div class="workout-program">
+    <h2>Beginner-Friendly Human Flag Workout Plan (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Core & Shoulder Strength</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Wrist stretches, Shoulder dislocates, Dynamic core stretches, Hollow body hold</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck Flag Hold</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Inverted Rows (Under a Bar)</td>
+                <td>4</td>
+                <td>8-10 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Hollow Body Rocks</td>
+                <td>3</td>
+                <td>20-30 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Negative Pull-Ups</td>
+                <td>3</td>
+                <td>3-5 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Scapular Pull-Ups</td>
+                <td>3</td>
+                <td>10 reps</td>
+                <td>1 min</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Plank Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Side Strength & Stability</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Shoulder mobility, Arm circles, Dynamic side stretches</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Side Plank (Leg Raises)</td>
+                <td>3</td>
+                <td>8-10 reps per side</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Hanging Knee Raises</td>
+                <td>3</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Band-Assisted Human Flag Holds</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Bodyweight Rows</td>
+                <td>4</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Side-to-Side Shuffles</td>
+                <td>3</td>
+                <td>20 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck L-Sit Hold</td>
+                <td>3</td>
+                <td>10-15 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Full Body Strength & Human Flag Progressions</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps/Time</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (10-15 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Dynamic stretches for shoulders, Hollow body holds, Shoulder dislocates</td>
+                <td>-</td>
+                <td>10-15 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Tuck Flag to Extended Flag</td>
+                <td>4</td>
+                <td>10-15 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Pull-Ups (Band-Assisted if Necessary)</td>
+                <td>3</td>
+                <td>6-8 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Tuck Flag to Negative Flag</td>
+                <td>3</td>
+                <td>3-5 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Back Extensions</td>
+                <td>3</td>
+                <td>10-12 reps</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr>
+                <td>Isometric Hold on Bar</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>1-2 mins</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Core Finisher</strong></td>
+            </tr>
+            <tr>
+                <td>Hollow Body Hold</td>
+                <td>3</td>
+                <td>20-30 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    
+    `
   }
 }; 
