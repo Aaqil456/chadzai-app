@@ -1,21 +1,2120 @@
 export const workoutPlans = {
   beginner: {
-    traditional: `...your beginner traditional plan...`,
-    split: `...your beginner split plan...`,
-    pyramid: `...your beginner pyramid plan...`,
-    superset: `...your beginner superset plan...`,
-    dropset: `...your beginner dropset plan...`,
-    giantset: `...your beginner giant set plan...`,
-    restpause: `...your beginner rest-pause plan...`,
-    hit: `...your beginner HIT plan...`,
-    periodization: `...your beginner periodization plan...`,
-    functional: `...your beginner functional plan...`
+    traditional: 
+    `
+    <div class="workout-program">
+    <h2>Beginner Bodybuilding with Mike Mentzer Method (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Upper Body</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Bench Press</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bent-Over Rows</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Overhead Dumbbell Press</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Tricep Dips</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bicep Curls</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Lower Body</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Squats</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Deadlifts</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Press</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Curls</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Calf Raises</td>
+                <td>3</td>
+                <td>10-15 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Full Body</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Press</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Seated Cable Rows</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Lunges</td>
+                <td>3</td>
+                <td>8-12 reps per leg</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Shoulder Lateral Raises</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Plank</td>
+                <td>3</td>
+                <td>30-60 secs</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Additional Notes</h3>
+    <ul>
+        <li><strong>Progressive Overload:</strong> Increase weights as you gain strength while maintaining form.</li>
+        <li><strong>Rest Days:</strong> Ensure at least one rest day between workouts for recovery.</li>
+        <li><strong>Cool Down:</strong> End each session with static stretching.</li>
+    </ul>
+</div>
+
+    
+    `,
+
+
+    split: `
+
+    <div class="workout-program">
+    <h2>Beginner Split Training with Mike Mentzer Method (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Push (Chest, Shoulders, Triceps)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Bench Press</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Press</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Overhead Dumbbell Press</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Lateral Raises</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Tricep Dips</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Skull Crushers</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Pull (Back, Biceps)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bent-Over Rows</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Seated Cable Rows</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Face Pulls</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bicep Curls</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Hammer Curls</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Legs</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Squats</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Deadlifts</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Press</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Curls</td>
+                <td>3</td>
+                <td>8-12 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Calf Raises</td>
+                <td>3</td>
+                <td>10-15 reps</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Additional Notes</h3>
+    <ul>
+        <li><strong>Progressive Overload:</strong> Increase weights as you gain strength while maintaining form.</li>
+        <li><strong>Rest Days:</strong> Ensure at least one rest day between workouts for recovery.</li>
+        <li><strong>Cool Down:</strong> End each session with static stretching.</li>
+    </ul>
+</div>
+
+    
+    `,
+    pyramid: 
+    `
+    
+    <div class="workout-program">
+    <h2>Beginner Pyramid Training with Mike Mentzer Method (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Upper Body</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Bench Press</td>
+                <td>4</td>
+                <td>12, 10, 8, 6</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bent-Over Rows</td>
+                <td>4</td>
+                <td>12, 10, 8, 6</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Overhead Dumbbell Press</td>
+                <td>4</td>
+                <td>12, 10, 8, 6</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Lower Body</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Squats</td>
+                <td>4</td>
+                <td>12, 10, 8, 6</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Deadlifts</td>
+                <td>4</td>
+                <td>12, 10, 8, 6</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Press</td>
+                <td>4</td>
+                <td>12, 10, 8, 6</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Full Body</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Press</td>
+                <td>4</td>
+                <td>12, 10, 8, 6</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>4</td>
+                <td>12, 10, 8, 6</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Curls</td>
+                <td>4</td>
+                <td>12, 10, 8, 6</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Additional Notes</h3>
+    <ul>
+        <li><strong>Progressive Overload:</strong> Gradually increase weights as you become stronger while maintaining proper form.</li>
+        <li><strong>Rest Days:</strong> Ensure at least one day of rest between workouts for recovery.</li>
+        <li><strong>Cool Down:</strong> End each session with static stretching to improve flexibility and reduce muscle soreness.</li>
+    </ul>
+</div>
+
+    
+    `,
+
+    superset: 
+    `
+    
+    <div class="workout-program">
+    <h2>Beginner Superset Training with Mike Mentzer Method (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Upper Body (Superset Push and Pull)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Bench Press</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bent-Over Rows</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Overhead Dumbbell Press</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Tricep Dips</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bicep Curls</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Lower Body (Superset Push and Pull for Legs)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Squats</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Romanian Deadlifts</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Press</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Curls</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Calf Raises</td>
+                <td>3</td>
+                <td>10-15</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Walking Lunges</td>
+                <td>3</td>
+                <td>8-12 per leg</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Full Body (Mixed Supersets)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Press</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Seated Cable Rows</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Lateral Raises</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Face Pulls</td>
+                <td>3</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Plank</td>
+                <td>3</td>
+                <td>30-60 seconds</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Raises</td>
+                <td>3</td>
+                <td>12-15</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Additional Notes</h3>
+    <ul>
+        <li><strong>Progressive Overload:</strong> Gradually increase weights as you become stronger while maintaining proper form.</li>
+        <li><strong>Rest Days:</strong> Ensure at least one day of rest between workouts for recovery.</li>
+        <li><strong>Cool Down:</strong> End each session with static stretching to improve flexibility and reduce muscle soreness.</li>
+    </ul>
+</div>
+
+    
+    `,
+
+    dropset: 
+    `
+    <div class="workout-program">
+    <h2>Beginner Drop Sets with Mike Mentzer Method (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Upper Body (Drop Sets)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Bench Press (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Press (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bent-Over Rows (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Overhead Dumbbell Press (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Lower Body (Drop Sets)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Squats (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Deadlifts (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Press (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Calf Raises (Drop Set)</td>
+                <td>2</td>
+                <td>10-12, then 8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Full Body (Drop Sets)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Press (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Pull-Ups or Lat Pulldowns (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Curls (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bicep Curls (Drop Set)</td>
+                <td>2</td>
+                <td>8-10, then 6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Additional Notes</h3>
+    <ul>
+        <li><strong>Progressive Overload:</strong> Gradually increase weights as you become stronger while maintaining proper form.</li>
+        <li><strong>Rest Days:</strong> Ensure at least one day of rest between workouts for recovery.</li>
+        <li><strong>Cool Down:</strong> End each session with static stretching to improve flexibility and reduce muscle soreness.</li>
+    </ul>
+</div>
+
+    
+    `,
+
+    giantset: 
+    `
+    <div class="workout-program">
+    <h2>Beginner Giant Sets with Mike Mentzer Method (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Chest and Triceps (Giant Sets)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Bench Press (Giant Set)</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Press (Giant Set)</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Chest Flyes (Giant Set)</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Push-Ups (Giant Set)</td>
+                <td>1</td>
+                <td>8-12 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Triceps Giant Set</strong></td>
+            </tr>
+            <tr>
+                <td>Tricep Dips</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Skull Crushers</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Overhead Tricep Extension</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Cable Tricep Pushdowns</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Back and Biceps (Giant Sets)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Pull-Ups or Lat Pulldowns (Giant Set)</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bent-Over Rows (Giant Set)</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Seated Cable Rows (Giant Set)</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Shrugs (Giant Set)</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Biceps Giant Set</strong></td>
+            </tr>
+            <tr>
+                <td>Bicep Curls</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Hammer Curls</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Concentration Curls</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Cable Bicep Curls</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Legs and Shoulders (Giant Sets)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Squats (Giant Set)</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Press (Giant Set)</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Lunges (Giant Set)</td>
+                <td>1</td>
+                <td>8-10 (per leg)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Calf Raises (Giant Set)</td>
+                <td>1</td>
+                <td>10-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Shoulders Giant Set</strong></td>
+            </tr>
+            <tr>
+                <td>Overhead Dumbbell Press</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Lateral Raises</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Front Raises</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Face Pulls</td>
+                <td>1</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Additional Notes</h3>
+    <ul>
+        <li><strong>Progressive Overload:</strong> Gradually increase weights as you become stronger while maintaining proper form.</li>
+        <li><strong>Rest Days:</strong> Ensure at least one day of rest between workouts for recovery.</li>
+        <li><strong>Cool Down:</strong> End each session with static stretching to improve flexibility and reduce muscle soreness.</li>
+    </ul>
+</div>
+
+    
+    `,
+
+    restpause: 
+    `
+    <div class="workout-program">
+    <h2>Beginner Rest-Pause Training with Mike Mentzer Method (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Chest and Triceps (Rest-Pause Method)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Bench Press</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Press</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Tricep Dips</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Skull Crushers</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Back and Biceps (Rest-Pause Method)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bent-Over Rows</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bicep Curls</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Hammer Curls</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Legs and Shoulders (Rest-Pause Method)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Squats</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Press</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Overhead Dumbbell Press</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Lateral Raises</td>
+                <td>3</td>
+                <td>8-10 (to failure + 3-4)</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Additional Notes</h3>
+    <ul>
+        <li><strong>Progressive Overload:</strong> Gradually increase weights as you become stronger while maintaining proper form.</li>
+        <li><strong>Rest Days:</strong> Ensure at least one day of rest between workouts for recovery.</li>
+        <li><strong>Cool Down:</strong> End each session with static stretching to improve flexibility and reduce muscle soreness.</li>
+    </ul>
+</div>
+
+    
+    `,
+
+    hit: `
+
+    <div class="workout-program">
+    <h2>Beginner High-Intensity Training (HIT) with Mike Mentzer Method (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Chest and Back (HIT Style)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Bench Press</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Press</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bent-Over Rows</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Legs (HIT Style)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Squats</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Leg Press</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Romanian Deadlifts</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Calf Raises</td>
+                <td>1</td>
+                <td>10-12 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Shoulders and Arms (HIT Style)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Overhead Dumbbell Press</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Lateral Raises</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bicep Curls</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Tricep Dips</td>
+                <td>1</td>
+                <td>8-10 (to failure)</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Additional Notes</h3>
+    <ul>
+        <li><strong>Focus on Intensity:</strong> Each exercise is performed to failure, meaning you cannot perform another rep with proper form.</li>
+        <li><strong>Minimal Sets:</strong> High-Intensity Training (HIT) focuses on fewer sets but maximal effort. Push each set to the limit.</li>
+        <li><strong>Rest Days:</strong> Ensure at least one day of rest between workouts to recover fully.</li>
+        <li><strong>Cool Down:</strong> End each session with static stretching to improve flexibility and reduce muscle soreness.</li>
+        <li><strong>Progression:</strong> As you get stronger, increase the weight slightly while maintaining proper form and continuing to push each set to failure.</li>
+    </ul>
+</div>
+
+    
+    `,
+
+    periodization: 
+    `
+    
+    <div class="workout-program">
+    <h2>Beginner Periodization with Mike Mentzer Method (4 Phases)</h2>
+
+    <!-- Phase 1: Hypertrophy -->
+    <h3>Phase 1: Hypertrophy (Weeks 1-4)</h3>
+    <h4>Training Frequency: 3 Days a Week</h4>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 1: Chest and Back</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bench Press</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Incline Dumbbell Press</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bent-Over Rows</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 2: Legs</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Squats</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Leg Press</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Romanian Deadlifts</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Calf Raises</td>
+                <td>3-4</td>
+                <td>10-15</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 3: Shoulders and Arms</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Overhead Dumbbell Press</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lateral Raises</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bicep Curls</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tricep Dips</td>
+                <td>3-4</td>
+                <td>8-12</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Phase 2: Strength -->
+    <h3>Phase 2: Strength (Weeks 5-8)</h3>
+    <h4>Training Frequency: 3 Days a Week</h4>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 1: Chest and Back</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bench Press</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Incline Dumbbell Press</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bent-Over Rows</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 2: Legs</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Squats</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Deadlifts</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Leg Press</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Calf Raises</td>
+                <td>3-5</td>
+                <td>8-10</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 3: Shoulders and Arms</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Overhead Dumbbell Press</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lateral Raises</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bicep Curls</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tricep Dips</td>
+                <td>3-5</td>
+                <td>4-6</td>
+                <td>90-120 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Phase 3: Power and Peaking -->
+    <h3>Phase 3: Power and Peaking (Weeks 9-12)</h3>
+    <h4>Training Frequency: 3 Days a Week</h4>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 1: Chest and Back</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bench Press (Explosive)</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Incline Dumbbell Press</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bent-Over Rows</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 2: Legs</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Squats (Explosive)</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Deadlifts (Explosive)</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Leg Press</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Calf Raises</td>
+                <td>3-4</td>
+                <td>6-8</td>
+                <td>120 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 3: Shoulders and Arms</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Overhead Dumbbell Press (Explosive)</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lateral Raises</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bicep Curls</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Tricep Dips</td>
+                <td>3-4</td>
+                <td>2-4</td>
+                <td>120 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Phase 4: Active Recovery -->
+    <h3>Phase 4: Active Recovery (Weeks 13-16)</h3>
+    <h4>Training Frequency: 3 Days a Week</h4>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 1: Full Body</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Bodyweight Squats</td>
+                <td>2-3</td>
+                <td>10-15</td>
+                <td>30-60 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Push-Ups</td>
+                <td>2-3</td>
+                <td>10-15</td>
+                <td>30-60 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Plank</td>
+                <td>2-3</td>
+                <td>30-60 secs</td>
+                <td>30-60 secs</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 2: Cardio and Mobility</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Brisk Walking or Light Jogging</td>
+                <td>1</td>
+                <td>30 mins</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dynamic Stretching</td>
+                <td>1</td>
+                <td>15 mins</td>
+                <td></td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="5"><strong>Day 3: Core and Flexibility</strong></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Leg Raises</td>
+                <td>2-3</td>
+                <td>10-15</td>
+                <td>30-60 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Russian Twists</td>
+                <td>2-3</td>
+                <td>10-15</td>
+                <td>30-60 secs</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Static Stretching</td>
+                <td>1</td>
+                <td>15 mins</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    
+    `,
+
+    functional: 
+    `
+    
+    <div class="workout-program">
+    <h2>Beginner Bodybuilding with Functional Training and Mike Mentzer Method (3 Days a Week)</h2>
+
+    <!-- Day 1 -->
+    <h3>Day 1: Chest, Back, and Functional Core (Functional and Hypertrophy Focus)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Bench Press</td>
+                <td>3</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Pull-Ups or Lat Pulldowns</td>
+                <td>3</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Kettlebell Swings</td>
+                <td>3</td>
+                <td>12-15</td>
+                <td>60 secs</td>
+            </tr>
+            <tr>
+                <td>Medicine Ball Slams</td>
+                <td>3</td>
+                <td>10-12</td>
+                <td>60 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 2 -->
+    <h3>Day 2: Legs, Shoulders, and Mobility (Functional and Strength Focus)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Squats</td>
+                <td>3</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Overhead Dumbbell Press</td>
+                <td>3</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Lunges</td>
+                <td>3</td>
+                <td>12-15 (per leg)</td>
+                <td>60 secs</td>
+            </tr>
+            <tr>
+                <td>Turkish Get-Up</td>
+                <td>3</td>
+                <td>5-6 (per side)</td>
+                <td>60-90 secs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Day 3 -->
+    <h3>Day 3: Full-Body Functional Conditioning and Arms (Functional and Endurance Focus)</h3>
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="section-header">
+                <td colspan="4"><strong>Warm-up (5-10 minutes)</strong></td>
+            </tr>
+            <tr>
+                <td>Light cardio, Dynamic stretches</td>
+                <td>-</td>
+                <td>5-10 mins</td>
+                <td>-</td>
+            </tr>
+            <tr class="section-header">
+                <td colspan="4"><strong>Main Workout</strong></td>
+            </tr>
+            <tr>
+                <td>Deadlifts</td>
+                <td>3</td>
+                <td>6-8</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Bicep Curls</td>
+                <td>3</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Tricep Dips</td>
+                <td>3</td>
+                <td>8-10</td>
+                <td>60-90 secs</td>
+            </tr>
+            <tr>
+                <td>Box Jumps</td>
+                <td>3</td>
+                <td>10</td>
+                <td>60 secs</td>
+            </tr>
+            <tr>
+                <td>Plank</td>
+                <td>3</td>
+                <td>30-45 secs</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Additional Notes</h3>
+    <ul>
+        <li><strong>Warm-Up:</strong> Begin each session with 5-10 minutes of light cardio and dynamic stretches to activate muscles and joints.</li>
+        <li><strong>Functional Focus:</strong> Incorporate functional movements to enhance real-world performance, balance, and coordination while maintaining muscle-building efforts.</li>
+        <li><strong>Rest Days:</strong> Ensure rest days between workouts to allow proper recovery and muscle growth.</li>
+        <li><strong>Cool Down:</strong> Finish each workout with static stretching, focusing on flexibility and recovery.</li>
+        <li><strong>Progression:</strong> Gradually increase weights or reps for bodybuilding exercises and challenge your balance, coordination, and mobility for functional movements as you progress.</li>
+    </ul>
+</div>
+
+    
+    `
   },
-  intermediate: {
-    traditional: `...your intermediate traditional plan...`,
-    split: `...your intermediate split plan...`,
-    // ... other intermediate plans
-  },
+
+  // intermediate: {
+  //   traditional: `...your intermediate traditional plan...`,
+  //   split: `...your intermediate split plan...`,
+  //   // ... other intermediate plans
+  // },
   calisthenics: {
     muscleUp: `
       <div class="workout-program">
@@ -1165,7 +3264,8 @@ export const workoutPlans = {
 
     
     `,
-    humanFlag: 
+
+    humanflag: 
     `
     <div class="workout-program">
     <h2>Beginner-Friendly Human Flag Workout Plan (3 Days a Week)</h2>
