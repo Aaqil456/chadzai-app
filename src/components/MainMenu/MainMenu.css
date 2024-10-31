@@ -201,15 +201,23 @@ h1 {
   color: #121212;
 }
 
+.view-button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(14, 244, 228, 0.3);
+  background-color: #0ef4e4;
+}
+
 .delete-button {
   background-color: #ff4444;
   color: #ffffff;
 }
-
-.view-button:hover, .delete-button:hover {
+.delete-button:hover{
   transform: translateY(-2px);
-  box-shadow: 0 0 15px rgba(14, 244, 228, 0.3);
+  box-shadow: 0 0 15px #ff444452;
+  background-color: #ff4444;
+
 }
+
 
 .save-workout-button {
   margin-top: 20px;
@@ -226,6 +234,8 @@ h1 {
 .save-workout-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 15px rgba(14, 244, 228, 0.3);
+  background-color: #0ef4e4;
+
 }
 
 /* Add these new styles to your existing CSS */
@@ -238,17 +248,17 @@ h1 {
 }
 
 .workout-plan-display {
-  background-color: white;
+  background-color: #ffffff; /* Dark background to match theme */
   border-radius: 8px;
   padding: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(14, 244, 228, 0.1); /* Subtle glow */
   margin-top: 20px;
   overflow-x: auto;
-  color: #333;
+  color: #000000; /* White text for better contrast */
 }
 
-.workout-plan-display h2 {
-  color: #333;
+.workout-plan-display h1,h2,h3 {
+  color: #000000; /* Accent color for headers */
   margin-bottom: 20px;
   text-align: center;
 }
@@ -257,26 +267,29 @@ h1 {
   width: 100%;
   border-collapse: collapse;
   margin: 15px 0;
+  background-color: #ffffff; /* Slightly lighter than background */
 }
 
 .workout-plan-display th,
 .workout-plan-display td {
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff; /* Darker border for better separation */
   text-align: left;
 }
 
 .workout-plan-display th {
-  background-color: #f5f5f5;
+  background-color: #ffffff; /* Header background */
+  color: #0ef4e4; /* Accent color for headers */
   font-weight: bold;
 }
 
 .workout-plan-display tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #ffffff; /* Subtle alternating rows */
 }
 
 .workout-plan-display .section-header {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
+  color: #0ef4e4;
   font-weight: bold;
 }
 
@@ -294,12 +307,19 @@ h1 {
 /* Style any lists within the workout plan */
 .workout-plan-display ul,
 .workout-plan-display ol {
-  padding-left: 20px;
-  margin: 10px 0;
+  padding-left: 25px;
+  margin: 15px 0;
 }
 
 .workout-plan-display li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Add some spacing between paragraphs */
+.workout-plan-display p {
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
 /* Style any embedded iframes */

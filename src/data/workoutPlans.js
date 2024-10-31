@@ -2116,7 +2116,7 @@ export const workoutPlans = {
   //   // ... other intermediate plans
   // },
   calisthenics: {
-    muscleUp: `
+    muscleup: `
       <div class="workout-program">
         <h2>Muscle-Up Beginner Workout Plan (3 Days a Week)</h2>
 
@@ -2850,7 +2850,7 @@ export const workoutPlans = {
 
     `,
 
-    frontLever: `
+    frontlever: `
     
     <div class="workout-program">
     <h2>Beginner-Friendly Front Lever Workout Plan (3 Days a Week)</h2>
@@ -3058,7 +3058,7 @@ export const workoutPlans = {
     `,
 
 
-    backLever: 
+    backlever: 
     `
     <div class="workout-program">
     <h2>Beginner-Friendly Back Lever Workout Plan (3 Days a Week)</h2>
