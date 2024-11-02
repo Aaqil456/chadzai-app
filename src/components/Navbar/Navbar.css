@@ -112,3 +112,41 @@ body {
     padding-top: 60px; /* Add top padding to body to prevent content from going under navbar */
     background-color: #dddddd; /* Dark background color */
 }
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    padding: 10px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-links.active {
+    transform: translateY(0);
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar a {
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

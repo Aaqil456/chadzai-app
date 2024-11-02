@@ -2,13 +2,15 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
-
 
 .question-container {
   text-align: center;
   margin-bottom: 20px;
-  
+  width: 100%;
 }
 
 .question-container h2{
@@ -56,14 +58,12 @@
   padding: 0;
 }
 
-
 .workout-plan-container li {
   margin-bottom: 10px;
   padding: 10px;
   background-color: #f8f9fa;
   border-radius: 5px;
 }
-
 
 .workout-program {
   padding: 20px;
@@ -93,6 +93,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .workout-program li {
   padding: 15px;
   border-bottom: 1px solid #ddd;
@@ -137,10 +138,43 @@
   border-bottom: none;
 }
 
-
 @media (max-width: 768px) {
   .workout-table {
     display: block;
     overflow-x: auto;
+  }
+}
+
+/* Improved Responsive Design */
+@media screen and (max-width: 768px) {
+  .workout-chat {
+    padding: 15px;
+  }
+
+  .options-container {
+    flex-direction: column;
+  }
+
+  .option-button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .workout-program {
+    padding: 15px;
+  }
+
+  .workout-table {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .workout-chat {
+    padding: 10px;
+  }
+
+  .question-container h2 {
+    font-size: 1.5rem;
   }
 }

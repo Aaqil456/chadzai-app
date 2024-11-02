@@ -197,16 +197,31 @@ body {
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .chatbot-container {
-    margin-top: 80px;
-    max-height: calc(90vh - 80px);
+    width: 95%;
+    margin: 60px auto 20px auto;
+    padding: 20px;
+  }
+
+  .chatbot-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .chatbot-container {
-    margin-top: 60px;
-    max-height: calc(90vh - 60px);
-    padding: 20px;
+    width: 98%;
+    padding: 15px;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }
 
