@@ -67,7 +67,7 @@ function MainMenu() {
           className="chatbot-button"
           onClick={() => navigate('/chatbot')}
         >
-          Open ChatBot
+          Image Scan
         </button>
         <button 
           className="find-workouts-button"
