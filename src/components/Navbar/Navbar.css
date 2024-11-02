@@ -1,12 +1,12 @@
 /* src/components/Navbar/Navbar.css */
 
 .navbar {
-    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
+    background: linear-gradient(to right, #fcfcfc, #fcfcfc, #fcfcfc);
     padding: 10px 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
     width: 100%;
     box-sizing: border-box;
     position: fixed;
@@ -76,6 +76,34 @@
     box-shadow: 
         0 0 10px rgba(221, 221, 221, 0.6), 
         0 0 20px rgba(250, 250, 250, 0.4);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px; /* or whatever size you want */
+    width: 40px; /* make width equal to height for perfect circle */
+    border-radius: 50%; /* this makes it circular */
+    object-fit: cover; /* this ensures the image fills the circle nicely */
+    border: 2px solid #333; /* adds a border */
+    box-shadow: 0 0 8px rgba(0,0,0,0.2); /* adds a subtle shadow */
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Fix the Link component styling */
+.navbar-logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 /* Add this to your global styles or App.css */

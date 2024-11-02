@@ -4,6 +4,8 @@ import { questions } from '../../data/questions';
 import { workoutPlans } from '../../data/workoutPlans';
 import { determineWorkoutPlan } from '../../utils/workoutUtils';
 import './WorkoutChat.css';
+import { auth, db } from '../../services/firebase';
+import { addDoc, collection } from 'firebase/firestore';
 
 function WorkoutChat() {
   const navigate = useNavigate();
@@ -50,21 +52,37 @@ function WorkoutChat() {
 
   const question = getCurrentQuestion();
 
-  const handleSaveWorkout = () => {
+  const handleSaveWorkout = async () => {
     const workoutPlan = determineWorkoutPlan(answers, workoutPlans);
-    const savedWorkouts = JSON.parse(localStorage.getItem('savedWorkouts') || '[]');
+    const user = auth.currentUser;
     
+    if (!user) {
+      alert('Please sign in to save your workout plan');
+      return;
+    }
+
     const newWorkout = {
+      userId: user.uid,
       id: Date.now(),
       type: answers.goal === "Build Muscle" ? answers.style : answers.skill,
       plan: workoutPlan,
       date: new Date().toLocaleDateString()
     };
     
-    savedWorkouts.push(newWorkout);
-    localStorage.setItem('savedWorkouts', JSON.stringify(savedWorkouts));
-    
-    navigate('/'); // Return to main menu
+    try {
+      console.log('Attempting to save workout:', newWorkout);
+      const docRef = await addDoc(collection(db, 'workouts'), newWorkout);
+      console.log('Workout saved successfully with ID:', docRef.id);
+      navigate('/');
+    } catch (error) {
+      console.error('Detailed error saving workout:', {
+        error: error,
+        errorMessage: error.message,
+        errorCode: error.code,
+        user: user.uid
+      });
+      alert(`Failed to save workout plan: ${error.message}`);
+    }
   };
 
   return (

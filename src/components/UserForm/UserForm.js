@@ -8,7 +8,6 @@ function UserForm() {
   const [name, setName] = useState('');
   const [height, setHeight] = useState('');
   const [weight, setWeight] = useState('');
-  const [fitnessGoal, setFitnessGoal] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -18,8 +17,7 @@ function UserForm() {
       await setDoc(doc(db, 'users', user.uid), {
         name,
         height,
-        weight,
-        fitnessGoal
+        weight
       });
       navigate('/main-menu');
     } else {
@@ -55,13 +53,7 @@ function UserForm() {
           placeholder="Weight (kg)"
           required
         />
-        <input
-          type="text"
-          value={fitnessGoal}
-          onChange={(e) => setFitnessGoal(e.target.value)}
-          placeholder="Fitness Goal"
-          required
-        />
+       
         <button type="submit" className="submit-button">Submit</button>
       </form>
     </div>

@@ -3,6 +3,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { signOut } from 'firebase/auth'; // Import signOut
 import { auth } from '../../services/firebase'; // Import auth
+import logo from '../../assets/1.png';
 import './Navbar.css';
 
 
@@ -20,6 +21,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <div className="navbar-logo">
+        <img src={logo} alt="Logo" />
+      </div>
       <div className="navbar-links">
         <ul>
           <li>

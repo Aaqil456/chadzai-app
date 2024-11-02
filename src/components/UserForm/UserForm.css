@@ -44,7 +44,7 @@
     transform: scale(1.02);
   }
   
-  h2 {
+  .user-form-container h2 {
     color: #f8f8f8;
     margin-bottom: 20px;
   }
