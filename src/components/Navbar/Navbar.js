@@ -30,7 +30,7 @@ const Navbar = () => {
             <Link to="/main-menu">Home</Link>
           </li>
           <li>
-            <Link to="/chatbot">ChatBot</Link>
+            <Link to="/chatbot">Image Recognition</Link>
           </li>
         </ul>
         <button onClick={handleLogout}>Logout</button>
