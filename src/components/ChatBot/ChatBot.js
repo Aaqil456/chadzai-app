@@ -22,9 +22,9 @@ function ChatBot() {
       usage: "Used for walking, running, or jogging to improve cardiovascular fitness.",
     },
     "bench": {
-      name: "Squat Rack",
-      usage: "Used for walking, running, or jogging to improve cardiovascular fitness.",
-      tutorial:"do squat or bench press",
+      name: "Smith Machine",
+      usage: "Used as a support for any major movements such as squatting, deadlifting or bench pressing.",
+      tutorial:"Adjust the height of the bar so it’s in a comfortable position for the exercise you’re performing. Before lifting heavy weights, do a warm-up set with a lighter load. This helps you get familiar with the machine’s movement and warms up your muscles",
     },
     // Add more machine mappings as needed
   };
