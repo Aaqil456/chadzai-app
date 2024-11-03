@@ -65,15 +65,15 @@ function MainMenu() {
       <div className="button-container">
         <button 
           className="chatbot-button"
-          onClick={() => navigate('/chatbot')}
+          onClick={() => navigate('/')}
         >
-          Image Scan
+          AI Image Recognition
         </button>
         <button 
           className="find-workouts-button"
-          onClick={() => navigate('/workoutplan')}
+          onClick={() => navigate('/')}
         >
-          Find My Workouts
+          AI Workout Planner
         </button>
       </div>
 

@@ -223,3 +223,46 @@ body {
 .navbar-links.active + .hamburger span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
+
+/* Add these new styles */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-right: 20px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icons img {
+  width: 16px;
+  height: 16px;
+  filter: invert(1);
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.social-icons a:hover img {
+  filter: invert(0); /* Makes icon black on hover */
+}
+
+/* Update mobile styles */
+@media screen and (max-width: 768px) {
+  .social-icons {
+    margin: 0 0 15px 0;
+  }
+}

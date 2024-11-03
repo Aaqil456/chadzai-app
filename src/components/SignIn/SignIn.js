@@ -4,7 +4,7 @@ import { signInWithPopup } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { auth, googleProvider, db } from '../../services/firebase';
 import { doc, getDoc } from 'firebase/firestore';
-import logo from '../../assets/1.png';
+import logo from '../../assets/2.png';
 import './SignIn.css';
 
 
@@ -22,7 +22,8 @@ function SignIn() {
         navigate('/main-menu');
       } else {
         // New user, redirect to user form
-        navigate('/user-form');
+        //navigate('/user-form');
+        navigate('/main-menu');
       }
     } catch (error) {
       console.error("Error signing in with Google: ", error);

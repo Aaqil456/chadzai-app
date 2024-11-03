@@ -11,7 +11,7 @@
 }
 
 /* Main title with a neon glow effect */
-h1 {
+.main-menu-container h1 {
   color: #ffffff; /* Pure white for text */
   margin-bottom: 30px;
   font-size: 2.5em;
@@ -19,6 +19,13 @@ h1 {
   
 }
 
+.main-menu-container h2 {
+  color: #ffffff; /* Pure white for text */
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  text-align: center;
+  
+}
 /* Button with neon hover effects */
 .chatbot-button {
   background-color: #202020; /* Dark grey background */

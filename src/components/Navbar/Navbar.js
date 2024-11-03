@@ -1,9 +1,13 @@
 // src/components/Navbar/Navbar.js
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
+
 import { signOut } from 'firebase/auth'; // Import signOut
 import { auth } from '../../services/firebase'; // Import auth
-import logo from '../../assets/1.png';
+import logo from '../../assets/navbar_icon.png';
+import twitterIcon from '../../assets/twitter_icon.svg';
+import instagramIcon from '../../assets/instagram_icon.svg';
 import './Navbar.css';
 
 
@@ -35,6 +39,14 @@ const Navbar = () => {
         <span></span>
       </div>
       <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+        <div className="social-icons">
+          <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
+            <img src={twitterIcon} alt="Twitter" />
+          </a>
+          <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+            <img src={instagramIcon} alt="Instagram" />
+          </a>
+        </div>
         <button onClick={handleLogout}>Logout</button>
       </div>
     </nav>
