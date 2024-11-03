@@ -105,7 +105,7 @@ function ChatBot() {
   return (
     <div className="chatbot-container">
       <div className="chatbot-content">
-        <h2>AI Assistant</h2>
+        <h2>Ask AI</h2>
         <button onClick={() => navigate('/main-menu')} className="back-button">
           Back to Main Menu
         </button>
