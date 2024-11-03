@@ -30,18 +30,18 @@ const Navbar = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div className="hamburger" onClick={toggleMenu}>
-        <span></span>
-        <span></span>
+        {/* <span></span>
+        <span></span> */}
         <span></span>
       </div>
       <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <ul>
-          <li>
+          {/* <li>
             <Link to="/main-menu" onClick={() => setIsMenuOpen(false)}>Home</Link>
           </li>
           <li>
             <Link to="/chatbot" onClick={() => setIsMenuOpen(false)}>Image Recognition</Link>
-          </li>
+          </li> */}
         </ul>
         <button onClick={handleLogout}>Logout</button>
       </div>
