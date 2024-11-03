@@ -32,14 +32,13 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {user && <Navbar />}
+        <Navbar />
         <Routes>
           <Route path="/signin" element={!user ? <SignIn /> : <Navigate to="/main-menu" />} />
           <Route path="/user-form" element={user ? <UserForm /> : <Navigate to="/signin" />} />
           <Route path="/main-menu" element={user ? <MainMenu /> : <Navigate to="/signin" />} />
           <Route path="/chatbot" element={user ? <ChatBot /> : <Navigate to="/signin" />} />
           <Route path="/workoutplan" element={user ? <WorkoutChat /> : <Navigate to="/signin" />} />
-
           <Route path="*" element={<Navigate to={user ? "/main-menu" : "/signin"} />} />
         </Routes>
       </div>

@@ -266,3 +266,15 @@ body {
     margin: 0 0 15px 0;
   }
 }
+
+/* Update the body style to ensure navbar is visible on all pages */
+body {
+    margin: 0;
+    padding-top: 60px; /* Keep this to prevent content from going under navbar */
+    background-color: #dddddd;
+}
+
+/* Make sure the navbar is visible on all pages */
+.navbar {
+    z-index: 1000; /* Ensure navbar stays on top */
+}

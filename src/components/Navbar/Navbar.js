@@ -1,6 +1,6 @@
 // src/components/Navbar/Navbar.js
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 
 import { signOut } from 'firebase/auth'; // Import signOut
@@ -13,7 +13,10 @@ import './Navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const isSignInPage = location.pathname === '/signin';
 
   const handleLogout = async () => {
     try {
@@ -40,14 +43,14 @@ const Navbar = () => {
       </div>
       <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <div className="social-icons">
-          <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/aa_fit62899" target="_blank" rel="noopener noreferrer">
             <img src={twitterIcon} alt="Twitter" />
           </a>
-          <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/chadz_ai/" target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram" />
           </a>
         </div>
-        <button onClick={handleLogout}>Logout</button>
+        {!isSignInPage && <button onClick={handleLogout}>Logout</button>}
       </div>
     </nav>
   );
