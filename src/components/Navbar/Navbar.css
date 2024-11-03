@@ -1,7 +1,7 @@
 /* src/components/Navbar/Navbar.css */
 
 .navbar {
-    background: linear-gradient(to right, #fcfcfc, #fcfcfc, #fcfcfc);
+    background: linear-gradient(to right, #000000, #000000, #000000);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -59,12 +59,13 @@
 .navbar button {
     background-color: transparent;
     border: 2px solid #000000;
-    color: #000000;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
+    border-color: #ffffff;
     transition: all 0.3s ease;
     padding: 8px 15px;
     border-radius: 20px;

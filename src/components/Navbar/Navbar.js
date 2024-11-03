@@ -36,12 +36,12 @@ const Navbar = () => {
       </div>
       <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <ul>
-          <li>
+          {/* <li>
             <Link to="/main-menu" onClick={() => setIsMenuOpen(false)}>Home</Link>
           </li>
           <li>
             <Link to="/chatbot" onClick={() => setIsMenuOpen(false)}>Image Recognition</Link>
-          </li>
+          </li> */}
         </ul>
         <button onClick={handleLogout}>Logout</button>
       </div>

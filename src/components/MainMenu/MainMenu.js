@@ -61,7 +61,7 @@ function MainMenu() {
 
   return (
     <div className="main-menu-container">
-      <h1>Welcome to Your Fitness Dashboard</h1>
+      <h1>Welcome to Your AI Fitness Dashboard</h1>
       <div className="button-container">
         <button 
           className="chatbot-button"
