@@ -90,10 +90,11 @@ h1 {
 }
 
 .hero-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    object-fit: cover;
 }
 
 /* Responsive Design */
@@ -126,8 +127,12 @@ h1 {
 
     .hero-image {
         margin: 15px 0;
-        padding: 0 15px;
-        max-width: max-content;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        border-radius: 0;
     }
 }
 
@@ -165,8 +170,7 @@ h1 {
 
     .hero-image {
         margin: 10px 0;
-        padding: 0 10px;
-        max-width: max-content;
+        padding: 0;
     }
 
     .signin-container img[alt="Logo"] {
@@ -178,7 +182,7 @@ h1 {
 @media screen and (max-width: 320px) {
     .hero-image {
         margin: 8px 0;
-        padding: 0 8px;
+        padding: 0;
     }
 
     h1 {
