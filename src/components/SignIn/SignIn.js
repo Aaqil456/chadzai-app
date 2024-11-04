@@ -35,7 +35,7 @@ function SignIn() {
     <div className="signin-container">
       <img src={logo} alt="Logo" />
       <div className="hero-image">
-      <img src={landingImg} alt="Logo" />
+      <img src={landingImg} alt="LandingImg" />
       </div>
       <h1>Welcome to modern AI-powered Fitness Web App</h1>
       <button className="signin-button" onClick={signInWithGoogle}>
