@@ -127,6 +127,7 @@ h1 {
     .hero-image {
         margin: 15px 0;
         padding: 0 15px;
+        max-width: max-content;
     }
 }
 
@@ -165,6 +166,7 @@ h1 {
     .hero-image {
         margin: 10px 0;
         padding: 0 10px;
+        max-width: max-content;
     }
 
     .signin-container img[alt="Logo"] {
