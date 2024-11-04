@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { auth, googleProvider, db } from '../../services/firebase';
 import { doc, getDoc } from 'firebase/firestore';
 import logo from '../../assets/2.png';
+import landingImg from '../../assets/land_page_gym_img.jpg';
 import './SignIn.css';
 
 
@@ -33,6 +34,9 @@ function SignIn() {
   return (
     <div className="signin-container">
       <img src={logo} alt="Logo" />
+      <div className="hero-image">
+      <img src={landingImg} alt="Logo" />
+      </div>
       <h1>Welcome to modern AI-powered Fitness Web App</h1>
       <button className="signin-button" onClick={signInWithGoogle}>
         Be A Chadz
