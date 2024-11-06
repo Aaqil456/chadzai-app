@@ -1,6 +1,8 @@
 // src/components/Navbar/Navbar.js
 import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
+//import { useNavigate, useLocation } from 'react-router-dom';
+
 //import { Link } from 'react-router-dom';
 
 import { signOut } from 'firebase/auth'; // Import signOut
@@ -13,10 +15,10 @@ import './Navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const location = useLocation();
+  //const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const isSignInPage = location.pathname === '/signin';
+  const isSignInPage = window.location.pathname === '/signin';
 
   const handleLogout = async () => {
     try {
@@ -36,12 +38,8 @@ const Navbar = () => {
       <div className="navbar-logo">
         <img src={logo} alt="Logo" />
       </div>
-      <div className="hamburger" onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+      
+      <div className="navbar-right">
         <div className="social-icons">
           <a href="https://x.com/aa_fit62899" target="_blank" rel="noopener noreferrer">
             <img src={twitterIcon} alt="Twitter" />
@@ -50,8 +48,21 @@ const Navbar = () => {
             <img src={instagramIcon} alt="Instagram" />
           </a>
         </div>
-        {!isSignInPage && <button onClick={handleLogout}>Logout</button>}
+        
+        {!isSignInPage && (
+          <div className="hamburger" onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        )}
       </div>
+
+      {!isSignInPage && (
+        <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+          <button onClick={handleLogout}>Logout</button>
+        </div>
+      )}
     </nav>
   );
 };

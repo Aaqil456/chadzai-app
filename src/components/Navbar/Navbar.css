@@ -120,6 +120,16 @@ body {
     padding: 8px 15px;
   }
 
+  .social-icons {
+    margin: 0;
+    gap: 10px; /* Reduce gap for mobile */
+  }
+
+  .social-icons a {
+    width: 32px; /* Make icons slightly smaller on mobile */
+    height: 32px;
+  }
+
   .navbar-links {
     position: fixed;
     top: 60px;
@@ -135,28 +145,9 @@ body {
     display: none;
   }
 
+  /* Remove the social-icons styles that were inside the navbar-links */
   .navbar-links.active {
     transform: translateY(0);
-    display: flex;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar a {
-    padding: 12px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .hamburger {
     display: flex;
   }
 }
@@ -165,8 +156,12 @@ body {
 .hamburger {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 28px; /* Match social icon size */
+  width: 28px; /* Match social icon size */
   cursor: pointer;
-  padding: 10px;
+  padding: 0; /* Remove padding to align properly */
 }
 
 .hamburger span {
@@ -238,13 +233,14 @@ body {
 /* Add these new styles */
 .social-icons {
   display: flex;
+  align-items: center;
   gap: 15px;
-  margin-right: 20px;
+  height: 100%; /* Match parent height */
 }
 
 .social-icons a {
-  width: 36px;
-  height: 36px;
+  width: 28px; /* Make consistent with hamburger size */
+  height: 28px;
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -275,6 +271,8 @@ body {
 @media screen and (max-width: 768px) {
   .social-icons {
     margin: 0 0 15px 0;
+    align-self: flex-start;
+    padding-left: 10%;
   }
 }
 
@@ -288,4 +286,58 @@ body {
 /* Make sure the navbar is visible on all pages */
 .navbar {
     z-index: 1000; /* Ensure navbar stays on top */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center; /* Ensure vertical alignment */
+  gap: 15px;
+  height: 40px; /* Set a fixed height to match the logo */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 100%; /* Match parent height */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .social-icons a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .social-icons img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #000000;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    display: none;
+  }
+
+  .navbar-links.active {
+    transform: translateY(0);
+    display: flex;
+  }
 }
