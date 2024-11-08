@@ -37,9 +37,9 @@ function SignIn() {
       <div className="hero-image">
       <img src={landingImg} alt="LandingImg" />
       </div>
-      <h1>Welcome to modern AI-powered Fitness Web App</h1>
+      <h2>Welcome to modern AI-powered Fitness Web App</h2>
       <button className="signin-button" onClick={signInWithGoogle}>
-        Be A Chadz
+        Be A Chad
       </button>
     </div>
   );
