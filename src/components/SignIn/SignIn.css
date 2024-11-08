@@ -18,12 +18,14 @@
     border-radius: 80px;
     padding: 15px 30px;
     font-size: 18px;
-    font-weight: 700;
+    font-family: 'Arial Black', 'Helvetica Bold', sans-serif;
+    font-weight: 900;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 20px;
     min-width: 200px;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    letter-spacing: 0.5px;
 }
 
 .signin-button:hover {
